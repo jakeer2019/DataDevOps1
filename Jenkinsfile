@@ -21,7 +21,7 @@ pipeline {
     stages {
         stage('Git Checkout'){
             steps {
-                git url: 'https://github.com/priya1233/testPipelineSrcCode.git'
+                git url: 'https://github.com/jakeer2019/DataDevOps1/SampleTestPipeline.git'
             }
         }
 
@@ -57,7 +57,7 @@ pipeline {
 		
 	   steps {
 		script {
-			rtMaven.tool = 'Maven-3.5.3' //Maven tool name specified in Jenkins configuration
+			rtMaven.tool = 'Maven-3.6.1' //Maven tool name specified in Jenkins configuration
 			echo 'The artefacts beuilt in Build stage are pushed to Nexus/ Artefactory repo'
 			}
 	    }
